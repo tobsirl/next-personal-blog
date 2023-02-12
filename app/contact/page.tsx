@@ -1,5 +1,12 @@
+import Link from 'next/link'
+
 export default function Contact() {
   return (
-    <div>contact</div>
+    <div>
+      <h1>contact</h1>
+      <Link href="/blog">
+        <a>Blog</a>
+      </Link>
+    </div>
   )
 }
