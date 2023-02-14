@@ -10,9 +10,12 @@ const getData = async () => {
 }
 
 export default async function Home() {
+  const data = await getData()
+  const post = data.data.children[0].data.title
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <h1>{post}</h1>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
