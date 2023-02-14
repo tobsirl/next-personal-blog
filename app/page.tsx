@@ -4,7 +4,12 @@ import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const getData = async () => {
+  const data = await fetch('https://www.reddit.com/.json')
+  return data.json()
+}
+
+export default async function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
