@@ -1,4 +1,4 @@
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve(1), ms))
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const getPost = async(slug) => {
   const post = await delay(5000)
