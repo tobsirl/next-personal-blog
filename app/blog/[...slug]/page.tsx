@@ -9,6 +9,7 @@ const getPost = async(slug) => {
 export default async function BlogPost({params}) {
   const { slug } = params
   const post = await getPost(slug)
+
   return (
     <div>{post.slug}</div>
   )
