@@ -12,3 +12,5 @@ const Button:  FC<Button> = ({ variant }) => {
     </button>
   )
 }
+
+export default Button

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
+import Button from '../components/Button'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default async function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <h1>{post}</h1>
+        <Button />
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
