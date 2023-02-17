@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
+import styles from './button.module.css'
+
 interface Button {
   variant: string
 }
@@ -7,7 +9,7 @@ interface Button {
 
 const Button:  FC<Button> = ({ variant }) => {
   return (
-    <button className={variant}>
+    <button className={styles.button}>
       Click me
     </button>
   )
