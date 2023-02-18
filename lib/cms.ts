@@ -1,7 +1,7 @@
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const getAllPosts = async () => {
-  await delay(5000);
+  await delay(3000);
   return new Array(10).fill(0).map((_, i) => ({
     id: i,
     slug: `post-${i}`,
