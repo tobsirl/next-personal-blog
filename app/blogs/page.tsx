@@ -9,7 +9,7 @@ export default async function BlogPage() {
       <h1>Blog</h1>
       <ul>
         {posts.map((post) => (
-          <Link href={`/blog/${post.slug}`} key={post.id}>
+          <Link href={`/blogs/${post.slug}`} key={post.id}>
            <div>
             <h2>{post.title}</h2>
            </div>
